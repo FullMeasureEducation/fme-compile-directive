@@ -1,14 +1,14 @@
-# fme-sortable
+# fme-compile-html
 A simple html5/angularjs directive for sorting lists via drag and drop
 
 Tested with karma/chai/sinon
 #Install
 ```
-bower install fme-sortable
+bower install fme-compile-html
 ```
 Inject the module into your angular app
 ```js
-angular.module('your-app',['fme-sortable'])
+angular.module('your-app',['fme-compile-html'])
 ```
 #Developer Info
 - git hooks do not git pushed to github
@@ -19,43 +19,10 @@ angular.module('your-app',['fme-sortable'])
 - when you are happy with everything submit a new tag ```git tag -a v1.0.2 -m 'Added new callback for onDragStart'``` ```git --tags push origin --tags```
   - This is necessary to get your changes when the users run bower install or bower update 
 #Usage
-Add the directive to an ng-repeat passing the list and index to the direct
+Add the directive to a div passing an ng-model from the parent controller with the html you want to display
 ```html
-<ul>
-  <li fme-sortable fme-list='list' 
-      fme-index='$index' 
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
-```
-
-#Additional Options
-##fme-on-drop
-Callback triggered after dropping the item
-```html
-<ul>
-  <li fme-sortable 
-      fme-list='list' 
-      fme-index='$index' 
-      fme-on-drop='myOnDropFunction()'
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
-```
-##fme-not-sortable
-Callback triggered after dropping the item
-```html
-<ul>
-  <li fme-sortable 
-      fme-list='list' 
-      fme-index='$index' 
-      fme-not-sortable='myFunctionToDetermineIfThingsAreNotSortable()' 
-      ng-repeat='item in list'>
-      {{list.name}}
-  </li>
-</ul>
+<div fme-compile-html='true' htmltext="description">
+    </div>
 ```
 
 ##Run the tests locally
