@@ -1,0 +1,34 @@
+{
+  "name": "fme-compile-html",
+  "main": "fme-compile-html.js",
+  "version": "1.0.3",
+  "homepage": "https://github.com/FullMeasureEducation/fme-compile-html.git",
+  "authors": [
+    "fme-samuelbirk <sam@fullmeasureed.com>"
+  ],
+  "description": "A simple angular directive for displaying thumbnail images and lightboxes",
+  "keywords": [
+    "guidance-image",
+    "list",
+    "drag",
+    "and",
+    "drop",
+    "html5",
+    "angularjs"
+  ],
+  "dependencies": {
+    "jquery": "2.1",
+    "bootstrap": "3.1",
+    "angular": "*",
+    "angular-mocks": "*",
+    "fme-guidance-image": "*"
+  },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
