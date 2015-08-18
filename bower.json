@@ -1,18 +1,16 @@
 {
   "name": "fme-compile-html",
   "main": "fme-compile-html.js",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "homepage": "https://github.com/FullMeasureEducation/fme-compile-html.git",
   "authors": [
     "fme-samuelbirk <sam@fullmeasureed.com>"
   ],
-  "description": "A simple angular directive for displaying thumbnail images and lightboxes",
+  "description": "A simple angular directive for compiling html and running the digest in case there are any directives",
   "keywords": [
-    "guidance-image",
+    "compile",
+    "html",
     "list",
-    "drag",
-    "and",
-    "drop",
     "html5",
     "angularjs"
   ],
