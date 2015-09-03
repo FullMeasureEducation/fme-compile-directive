@@ -5,9 +5,9 @@
       restrict: 'A',
       replace: true,
       link: function(scope, element, attrs) {
-        return scope.$watch(attrs.htmltext, function(html) {
+        scope.$watch(attrs.htmltext, function(html) {
           element.html(html);
-          return $compile(element.contents())(scope);
+          $compile(element.contents())(scope);
         });
       }
     };

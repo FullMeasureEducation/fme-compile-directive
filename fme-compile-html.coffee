@@ -6,3 +6,5 @@ angular.module('fme-compile-html', [])
     scope.$watch attrs.htmltext, (html) ->
       element.html(html)
       $compile(element.contents())(scope)
+      return
+    return
